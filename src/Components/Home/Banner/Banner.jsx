@@ -41,7 +41,7 @@ const Banner = () => {
 
        <div className="flex mt-8 gap-2">
        <button className="px-6 py-3 rounded-lg shadow-lg mt-4 bg-white font-medium">
-          <a href={myFile} download target="_blank" rel="noreferrer">
+          <a href="/contact" rel="noreferrer">
             HIRE ME
           </a>
         </button>
@@ -51,7 +51,7 @@ const Banner = () => {
           </a>
         </button>
         <button className="px-6 py-3 rounded-lg shadow-lg mt-4 bg-white font-medium">
-          <a href={myFile} download target="_blank" rel="noreferrer">
+          <a href="/about" rel="noreferrer">
             ABOUT ME
           </a>
         </button>
