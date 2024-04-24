@@ -33,9 +33,19 @@ const Skills = () => {
             "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
         },
         {
+          name: "Tailwind CSS",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        },
+        {
           name: "Bootstrap",
           image:
             "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+        },
+        {
+          name: "Typescript",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
         }
       ],
     },

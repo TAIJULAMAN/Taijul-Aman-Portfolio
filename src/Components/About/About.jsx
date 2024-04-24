@@ -25,7 +25,7 @@ const About = () => {
       description:
         " Alongside my passion for programming, I find joy in engaging in diverse hobbies that enrich my life.One of my favorite pastimes is playing cricket. On the field, i exhibit not only my physical prowess but also my competitive spirit and teamwork skills. Cricket serves as a welcomed break from the digital world, allowing me to connect with friends, enjoy the outdoors, and stay active.",
       image:
-        "https://i.ibb.co/0n27TxS/61700595-2188097574559498-8872263631547400192-n.jpg",
+        "https://i.ibb.co/rwfxjt6/aman.jpg",
       category: "hobby",
     },
   ];

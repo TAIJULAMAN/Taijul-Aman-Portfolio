@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import banner from "../../../assets/images/aman.png";
 import myFile from "../../../assets/cv/aman's cv.pdf";
-// import "./Banner.css";
 
 const Banner = () => {
   const [typingText, setTypingText] = useState("");
@@ -15,7 +14,7 @@ const Banner = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTypingText(prevText => {
+      setTypingText(() => {
         const newIndex = (index + 1) % texts.length;
         const newText = texts[newIndex];
         setIndex(newIndex);
@@ -39,11 +38,11 @@ const Banner = () => {
             {typingText}
           </h2>
           <p className="text-xl">
-            Welcome! I am a motivated individual with a passion for learning and
-            a knack for delivering top-notch results. With a positive attitude
-            and a growth mindset, I thrive on challenges and am dedicated to
-            making a meaningful contribution. Let us create something
-            extraordinary together!
+            Welcome! I am eager to thrive in a dynamic and challenging setting
+            where I can continuously enhance my skills through both independent
+            and collaborative efforts. My aim is to contribute meaningfully to
+            the organization while fostering my own growth, fueled by passion,
+            innovation, and resilience.!
           </p>
           <div className="flex mt-8 gap-2">
             <button className="text-[#2e424d] hover:bg-[#98dad9] px-6 py-3 rounded-lg shadow-lg mt-4 bg-white font-medium">

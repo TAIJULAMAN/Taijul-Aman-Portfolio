@@ -1,4 +1,7 @@
 import PropTypes from "prop-types";
+import { FaDirections } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <div
@@ -15,7 +18,10 @@ const ProjectCard = ({ project, setOpenModal }) => {
       </div>
       <div className="w-full flex flex-col gap-0 pz-[2px]">
         <h1 className='font-bold text-2xl text-[#b1b2b3] overflow-hidden text-ellipsis box-content w-full line-clamp-2'>{project.title}</h1>
-        <p className="text-sm ml-1 text-[#b1b2b3]">{project.date}</p>
+               <div className="flex items-center gap-2 mt-2">
+               <p className="text-sm ml-1 text-[#b1b2b3]">{project.date}</p>
+                <Link to={project.link} className="text-sm ml-1 text-[#98dad9]"><FaDirections /></Link>
+               </div>
         <p className="text-md text-[#b1b2b3] overflow-hidden mt-2 box-content w-full line-clamp-3 text-ellipsis">{project.description}</p>
       </div>
       <div className="flex items-center pl-2">
@@ -32,6 +38,7 @@ ProjectCard.propTypes = {
     image: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
     title: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     member: PropTypes.arrayOf(
