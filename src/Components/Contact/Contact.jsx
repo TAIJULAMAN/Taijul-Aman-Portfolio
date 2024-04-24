@@ -13,7 +13,7 @@ const Contact = () => {
                 <p className="mb-9 text-white leading-relaxed">
                   I am here for you around the clock, ready to support and
                   propel your success to new heights. Reach out to me anytime,
-                  day or night, and let us collaborate to skyrocket your dreans!
+                  day or night, and let us collaborate to skyrocket our dreans!
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -146,7 +146,7 @@ const Contact = () => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                        fill="#3056D3"
+                        fill="#98dad9"
                       />
                     </svg>
                   </span>

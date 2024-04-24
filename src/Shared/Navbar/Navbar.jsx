@@ -106,7 +106,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-[#98dad9] transition-all cursor-pointer"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
             onClick={closeMenu}
           >
             About
@@ -116,7 +116,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-[#98dad9] transition-all cursor-pointer"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Projects
