@@ -86,7 +86,7 @@ const Blogs = () => {
     },
   ];
   return (
-    <section className="py-10 bg-[#2f424d]">
+    <section className="pt-16 md:pt-32 bg-[#2f424d] px-[20px] md:px-[120px] lg:px-[120px]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="space-y-5 sm:mx-auto">
           <h1 className="text-[#98dad9] uppercase text-3xl font-extrabold text-center">

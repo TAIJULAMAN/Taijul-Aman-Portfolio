@@ -46,7 +46,7 @@ const Skills = () => {
           name: "Typescript",
           image:
             "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-        }
+        },
       ],
     },
     {
@@ -242,26 +242,31 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center py-10 px-4 z-1 relative bg-[#2f424d] text-ellipsis box-content line-clamp-2">
+    <div className="px-[20px] md:px-[120px] lg:px-[120px] flex flex-col justify-center items-center pt-16 md:pt-32 z-1 relative bg-[#2f424d] text-ellipsis box-content line-clamp-2">
       <div className="relative flex flex-col w-full mx-w-[1100px] md:flex-col justify-between items-center gap-3 mt-10 md:mt-5">
         <h1 className="font-bold text-4xl text-center text-[#98dad9] uppercase">
           Skills
         </h1>
         <p className="font-medium text-lg text-center text-white mb-10">
-          Here are some of my skills on which I have been working on for the
-          past 3 years.
+          Here are some of the key skills I have been actively developing and
+          refining.
         </p>
 
-        <div className="w-full flex flex-wrap justify-center items-center gap-10 mt-5  transition-all duration-300 ease-in-out hover:translate-y-[10px] hover:brightness-110">
+        <div className="w-full flex flex-wrap justify-center items-center gap-5 mt-5  transition-all duration-300 ease-in-out hover:translate-y-[10px] hover:brightness-110">
           {skills.map((skill, index) => (
-            <div className="w-full mx-w-[500px] md:mx-w-[500px] lg:mx-w-[500px] py-5 px-10 rounded-lg shadow-lg hover:shadow-[#98dad9] bg-[#171721] border-red-400 " key={`skill-${index}`}>
-              <p className="text-center text-white mb-5 font-semibold text-2xl">{skill.title}</p>
+            <div
+              className="w-full mx-w-[500px] md:mx-w-[500px] lg:mx-w-[500px] py-5 px-10 rounded-lg shadow-lg hover:shadow-[#98dad9] bg-[#171721] border-red-400 "
+              key={`skill-${index}`}
+            >
+              <p className="text-center text-white mb-5 font-semibold text-2xl">
+                {skill.title}
+              </p>
               <div className="flex flex-wrap justify-center items-center gap-3 mb-5">
                 {skill.skills.map((item, index_x) => (
-                  <div 
-                  className=" flex items-center justify-center gap-2 py-3 px-4 rounded-lg border-white text-lg font-semibold text-white" 
-                  key={`skill-x-${index_x}`}
-                    >
+                  <div
+                    className=" flex items-center justify-center gap-2 py-3 px-4 rounded-lg border-white text-lg font-semibold text-white"
+                    key={`skill-x-${index_x}`}
+                  >
                     <img className="w-10 h-10" src={item.image} />
                     {item.name}
                   </div>

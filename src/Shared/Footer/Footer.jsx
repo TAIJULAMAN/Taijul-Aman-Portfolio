@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col text-white bg-[#2e424d]  justify-center pt-10 pb-5 text-center">
-      <h1 className="uppercase font-semibold text-3xl text-[#98dad9]">
+    <div className="px-[20px] md:px-[100px] flex flex-col text-white bg-[#2e424d]  justify-center pt-10 pb-5 text-center">
+      <h1 className="uppercase font-semibold text-xl md:text-3xl text-[#98dad9]">
         Md. Shah Aman Patwary
       </h1>
       <p className="font-sans">Email: mdshahamanpatwary@gmail.com</p>

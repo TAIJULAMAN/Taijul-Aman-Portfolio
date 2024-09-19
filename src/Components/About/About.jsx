@@ -32,29 +32,29 @@ const About = () => {
   const [toggle, setToggle] = useState("personal");
 
   return (
-    <div className="bg-[#2f424d] flex flex-col justify-center items-center pt-10 px-4 relative">
+    <div className="overflow-x-hidden px-[20px] md:px-[120px] lg:[120px] bg-[#2f424d] flex flex-col justify-center items-center pt-16 md:pt-32 relative">
       <div className="relative flex flex-col w-full mx-w-[1100px] md:flex-col justify-between items-center gap-3 mt-10 md:mt-5">
         <h1 className="font-bold text-4xl text-center text-[#98dad9] uppercase">
           About Me
         </h1>
-        <p className="font-medium text-lg text-center text-white mb-10">
+        <p className="px-0 md:px-[200px] font-medium text-lg text-center text-white mb-10">
            You can find a brief introduction about myself along with my educational background and personal interests. I have included some key details to give visitors an overview of who I am and what I am passionate about outside of coding.
         </p>
-        <section className="flex font-medium text-xl gap-10">
+        <section className="flex text-sm md:text-xl font-semibold gap-2">
           <div
-            className="bg-white px-3 py-2 rounded-lg cursor-pointer hover:bg-[#98dad9]"
+            className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold"
             onClick={() => setToggle("personal")}
           >
             PERSONAL
           </div>
           <div
-            className="bg-white px-3 py-2 rounded-lg cursor-pointer hover:bg-[#98dad9]"
+            className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold"
             onClick={() => setToggle("education")}
           >
             EDUCATION
           </div>
           <div
-            className="bg-white px-3 py-2 rounded-lg cursor-pointer hover:bg-[#98dad9]"
+            className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold"
             onClick={() => setToggle("hobby")}
           >
             HOBBY

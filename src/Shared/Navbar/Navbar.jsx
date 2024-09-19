@@ -14,16 +14,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky z-10 w-full text-white bg-[#2e424d] shadow-lg">
+    <div className="overflow-hidden fixed z-10 w-full text-white bg-[#2e424d] px-[20px] md:px-[100px] lg:px-[100px] py-5">
       <div>
-        <div className=" flex flex-row justify-between p-5 px-5">
-          <div className=" flex flex-row items-center cursor-pointer">
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-row items-center cursor-pointer">
             <Link to="/" spy={true} smooth={true} duration={500}>
-              <h1 className=" text-2xl font-semibold hover:text-[#98dad9]">Shah Aman</h1>
+              <h1 className="text-2xl font-semibold hover:text-[#98dad9]">
+                Shah Aman
+              </h1>
             </Link>
           </div>
 
-          <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
+          <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="/"
               spy={true}
@@ -144,8 +146,9 @@ const Navbar = () => {
           <div className=" lg:hidden">
             <Link to="/contact">
               <button
-               onClick={closeMenu}
-               className="bg-base-500 text-[#2e424d] font-medium bg-white px-4 py-2 rounded-md hover:bg-[#98dad9] transition duration-300 ease-in-out">
+                onClick={closeMenu}
+                className="bg-base-500 text-[#2e424d] font-medium bg-white px-4 py-2 rounded-md hover:bg-[#98dad9] transition duration-300 ease-in-out"
+              >
                 Contact
               </button>
             </Link>

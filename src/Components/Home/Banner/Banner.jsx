@@ -6,7 +6,7 @@ const Banner = () => {
   const [typingText, setTypingText] = useState("");
   const [index, setIndex] = useState(0);
   const texts = [
-    "React Developer.",
+    "React Js Developer.",
     "Front End Developer.",
     "MERN Stack Developer.",
     "Responsive Web Designer.",
@@ -26,36 +26,39 @@ const Banner = () => {
   }, [index, texts]);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 py-10 bg-[#2e424d]">
-      <div className="pl-8 order-last lg:order-1">
+    <div className="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  px-[20px] md:px-[100px] lg:px-[100px]  pt-16 md:pt-32 bg-[#2e424d]">
+      <div className="order-last lg:order-1">
         <div className="text-white">
-          <h2 className="text-3xl lg:text-5xl py-2 font-semibold">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl py-2 font-semibold">
             Hi, I am
             <span className="text-[#98dad9] ml-2">Md.Shah Aman</span>
           </h2>
-          <h2 className=" text-3xl lg:text-4xl  font-bold py-4">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-bold py-4">
             <span className="pr-4">A</span>
             {typingText}
           </h2>
           <p className="text-xl">
-            Welcome! I am eager to thrive in a dynamic and challenging setting
-            where I can continuously enhance my skills through both independent
-            and collaborative efforts. My aim is to contribute meaningfully to
-            the organization while fostering my own growth, fueled by passion,
-            innovation, and resilience.!
+            Welcome! I am excited to thrive in a dynamic and challenging
+            environment where I can continuously develop my skills through both
+            individual initiative and collaborative teamwork. My goal is to make
+            a meaningful impact on the organization while pursuing personal
+            growth driven by passion, creativity, and a commitment to
+            excellence. With a strong focus on innovation and resilience, I look
+            forward to contributing to projects that inspire progress and
+            success.
           </p>
-          <div className="flex mt-8 gap-2">
-            <button className="text-[#2e424d] hover:bg-[#98dad9] px-6 py-3 rounded-lg shadow-lg mt-4 bg-white font-medium">
+          <div className="flex mt-10 gap-2">
+            <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
               <a href="/contact" rel="noreferrer">
                 HIRE ME
               </a>
             </button>
-            <button className="text-[#2e424d] hover:bg-[#98dad9] px-6 py-3 rounded-lg shadow-lg mt-4 bg-white font-medium">
+            <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
               <a href={myFile} download target="_blank" rel="noreferrer">
                 RESUME
               </a>
             </button>
-            <button className="text-[#2e424d] hover:bg-[#98dad9] px-6 py-3 rounded-lg shadow-lg mt-4 bg-white font-medium">
+            <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
               <a href="/about" rel="noreferrer">
                 ABOUT ME
               </a>
