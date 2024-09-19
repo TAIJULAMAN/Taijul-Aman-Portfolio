@@ -81,6 +81,17 @@ const Projects = ({ openModal, setOpenModal }) => {
       category: "Static Site",
       link: "https://nomads-tour.vercel.app/",
     },
+    {
+      id: 8,
+      title: "Japan Travels Agency",
+      git: "https://japantraveltour.craftysoft.com/",
+      description:
+        "Welcome to Japan-travel, your ultimate guide to exploring the beauty and culture of Japan. From historic temples to modern skyscrapers, we bring you curated travel experiences across Japan's diverse landscapes.",
+      image: "https://i.ibb.co.com/z7dLHrw/abc.png",
+      tags: ["React Js", "Node Js", "tailwind"],
+      category: "Mern Stack",
+      link: "https://japantraveltour.craftysoft.com/",
+    },
   ];
 
   const [toggle, setToggle] = useState("all");
