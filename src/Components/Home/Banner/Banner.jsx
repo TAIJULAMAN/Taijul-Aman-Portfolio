@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import banner from "../../../assets/images/aman.png";
-import myFile from "../../../assets/cv/aman's cv.pdf";
+import resume from "../../../../public/Aman Resume.pdf";
 
 const Banner = () => {
   const [typingText, setTypingText] = useState("");
@@ -54,7 +54,7 @@ const Banner = () => {
               </a>
             </button>
             <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
-              <a href={myFile} download target="_blank" rel="noreferrer">
+              <a href={resume} download target="_blank" rel="noreferrer">
                 RESUME
               </a>
             </button>
