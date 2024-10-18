@@ -78,41 +78,37 @@ const Blogs = () => {
   return (
     <section className="pt-16 md:pt-32 bg-[#2f424d] px-[20px] md:px-[120px] lg:px-[120px]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="space-y-5 sm:mx-auto">
-          <h1 className="text-[#98dad9] uppercase text-3xl font-extrabold text-center">
-            Latest blog posts
+        <div className="space-y-5 text-center mb-12">
+          <h1 className="text-[#98dad9] uppercase text-3xl font-extrabold">
+            Latest Blog Posts
           </h1>
-          <p className="font-medium text-lg text-center text-white">
-            Blogs that are loved by the people.I always love to write what i
-            learn and sharing new things.
+          <p className="font-medium text-lg text-white max-w-2xl mx-auto">
+            Dive into my latest writings on JavaScript, CSS, and web
+            development. I share what I learn and explore new ideas.
           </p>
         </div>
-        <ul className="grid gap-5 mt-16 sm:grid-cols-2 lg:grid-cols-3 ">
-          {posts.map((items, key) => (
+        <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((item, index) => (
             <li
-              className="w-full mx-auto group sm:max-w-sm border border-gray-900 rounded-lg"
-              key={key}
+              key={index}
+              className="bg-[#3b4b55] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl group flex flex-col"
             >
               <img
-                src={items.img}
+                src={item.img}
+                alt={item.title}
+                className="w-full h-48 object-cover"
                 loading="lazy"
-                alt={items.title}
-                className="w-full rounded-t-lg"
               />
-              <div className="mt-3 space-y-2 px-5">
-                <h3 className="text-lg text-white duration-150 group-hover:text-[#98dad9] font-semibold ">
-                  {items.title}
+              <div className="flex flex-col flex-1 p-5">
+                <h3 className="text-lg font-semibold text-white group-hover:text-[#98dad9]">
+                  {item.title}
                 </h3>
-                <p className="text-white text-sm">{items.desc}</p>
-              </div>
-              <div className="my-2 px-5">
+                <p className="text-white text-sm mt-2 flex-grow">{item.desc}</p>
                 <Link
-                  to={items.href}
-                  className="text-sm my-2 text-[#98dad9] inline-flex items-start"
+                  to={item.href}
+                  className="mt-4 text-center w-full py-2 px-4 bg-[#98dad9] text-[#2f424d] rounded-lg font-medium hover:bg-[#7ccbc9] transition-colors duration-200"
                 >
-                  <div className="text-[#2e424d] hover:bg-[#98dad9] px-3 py-2 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
-                    See More
-                  </div>
+                  See More
                 </Link>
               </div>
             </li>

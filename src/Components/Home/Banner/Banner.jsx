@@ -26,7 +26,7 @@ const Banner = () => {
   }, [index, texts]);
 
   return (
-    <div className="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  px-[20px] md:px-[100px] lg:px-[100px]  pt-16 md:pt-32 bg-[#2e424d]">
+    <div className="relative overflow-x-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  px-[20px] md:px-[100px] lg:px-[100px]  pt-16 md:pt-32 bg-[#2e424d]">
       <div className="order-last lg:order-1">
         <div className="text-white">
           <h2 className="text-2xl md:text-3xl lg:text-5xl py-2 font-semibold">

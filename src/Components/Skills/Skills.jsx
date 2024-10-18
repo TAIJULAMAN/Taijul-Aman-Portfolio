@@ -92,50 +92,6 @@ const Skills = () => {
       ],
     },
     // {
-    //   title: "DevOps",
-    //   skills: [
-    //     {
-    //       name: "AWS",
-    //       image:
-    //         "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
-    //     },
-    //     {
-    //       name: "Google Cloud",
-    //       image:
-    //         "https://static-00.iconduck.com/assets.00/google-cloud-platform-logo-icon-2048x1824-pg4wzspq.png",
-    //     },
-    //     {
-    //       name: "Docker",
-    //       image:
-    //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-    //     },
-    //     {
-    //       name: "Jenkins",
-    //       image:
-    //         "https://toppng.com/uploads/preview/jenkins-logo-11609365847mufysaivph.png",
-    //     },
-    //     {
-    //       name: "Nginx",
-    //       image: "https://download.logo.wine/logo/Nginx/Nginx-Logo.wine.png",
-    //     },
-    //     {
-    //       name: "Grafana",
-    //       image:
-    //         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grafana_logo.svg/1200px-Grafana_logo.svg.png",
-    //     },
-    //     {
-    //       name: "Kubernetes",
-    //       image:
-    //         "https://upload.wikimedia.org/wikipedia/commons/0/00/Kubernetes_%28container_engine%29.png",
-    //     },
-    //     {
-    //       name: "Prometheus",
-    //       image:
-    //         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
-    //     },
-    //   ],
-    // },
-    // {
     //   title: "Android",
     //   skills: [
     //     {
@@ -223,16 +179,11 @@ const Skills = () => {
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
         },
-        // {
-        //   name: "Postman",
-        //   image:
-        //     "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
-        // },
-        // {
-        //   name: "Adobe XD",
-        //   image:
-        //     "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-        // },
+        {
+          name: "Postman",
+          image:
+            "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+        },
         {
           name: "Figma",
           image:
@@ -242,7 +193,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="px-[20px] md:px-[120px] lg:px-[120px] flex flex-col justify-center items-center pt-16 md:pt-32 z-1 relative bg-[#2f424d] text-ellipsis box-content line-clamp-2">
+    <div className="pb-10 md:pb-20 px-[20px] md:px-[120px] lg:px-[120px] flex flex-col justify-center items-center pt-16 md:pt-32 z-1 relative bg-[#2f424d] text-ellipsis box-content line-clamp-2">
       <div className="relative flex flex-col w-full mx-w-[1100px] md:flex-col justify-between items-center gap-3 mt-10 md:mt-5">
         <h1 className="font-bold text-4xl text-center text-[#98dad9] uppercase">
           Skills
