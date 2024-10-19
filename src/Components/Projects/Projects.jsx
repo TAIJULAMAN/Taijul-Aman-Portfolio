@@ -11,9 +11,42 @@ const Projects = ({ openModal, setOpenModal }) => {
       description:
         "A manufacturer company that produces Bicycle parts. A user can purchase cycle parts, seeorders, pay via master card, and the admin can manage user, product, and payment system andadd products and make an admin.",
       image: "https://i.ibb.co/YbhrCkn/Bicycle-Odyssey.png",
-      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap"],
-      category: "Mern Stack",
+      tags: ["React Js", "Bootstrap"],
+      category: "Full Stack",
       link: "https://car-shop-client.web.app/",
+    },
+    {
+      id: 8,
+      title: "Japan Travels Agency",
+      git: "https://github.com/TAIJULAMAN/JapanTravel",
+      description:
+        "Welcome to Japan-travel, your ultimate guide to exploring the beauty and culture of Japan. From historic temples to modern skyscrapers, we bring you curated travel experiences across Japan's diverse landscapes.",
+      image: "https://i.ibb.co.com/z7dLHrw/abc.png",
+      tags: ["React Js", "Node Js", "tailwind"],
+      category: "Full Stack",
+      link: "https://japantravelagencyandtour.com/",
+    },
+    {
+      id: 9,
+      title: "Ecommerce Web",
+      git: "https://github.com/TAIJULAMAN/EcommerceWeb-customerSide",
+      description:
+        "This e-commerce auction platform offers Pallet, Truckload, and Case products, with options for Auction and Day-wise listings. Users can engage in real-time bidding or purchase products based on daily availability, creating a versatile shopping experience. The responsive design ensures seamless navigation and interactions across all devices.",
+      image: "https://i.ibb.co.com/GncfZkq/ew.png",
+      tags: ["React Js", "Redux", "tailwind"],
+      category: "Full Stack",
+      link: "https://ecommerce-web-customer-side.vercel.app/",
+    },
+    {
+      id: 10,
+      title: "Flight Ticket System",
+      git: "https://github.com/TAIJULAMAN/Flight-Ticket-System",
+      description:
+        "FTS is an intuitive online platform for booking flight tickets. It allows users to search for flights, compare prices, and easily make reservations, streamlining the travel planning process. The user-friendly interface enhances the overall booking experience.",
+      image: "https://i.ibb.co.com/9hd7jj2/fts.png",
+      tags: ["Next Js", "Redux", "tailwind"],
+      category: "Full Stack",
+      link: "https://fts-travo.vercel.app/",
     },
     {
       id: 2,
@@ -81,17 +114,7 @@ const Projects = ({ openModal, setOpenModal }) => {
       category: "Static Site",
       link: "https://nomads-tour.vercel.app/",
     },
-    {
-      id: 8,
-      title: "Japan Travels Agency",
-      git: "https://japantraveltour.craftysoft.com/",
-      description:
-        "Welcome to Japan-travel, your ultimate guide to exploring the beauty and culture of Japan. From historic temples to modern skyscrapers, we bring you curated travel experiences across Japan's diverse landscapes.",
-      image: "https://i.ibb.co.com/z7dLHrw/abc.png",
-      tags: ["React Js", "Node Js", "tailwind"],
-      category: "Mern Stack",
-      link: "https://japantraveltour.craftysoft.com/",
-    },
+    
   ];
 
   const [toggle, setToggle] = useState("all");
@@ -114,9 +137,9 @@ const Projects = ({ openModal, setOpenModal }) => {
           </div>
           <div
             className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold"
-            onClick={() => setToggle("Mern Stack")}
+            onClick={() => setToggle("Full Stack")}
           >
-            Mern Stack
+            Full Stack
           </div>
           <div
             className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold"

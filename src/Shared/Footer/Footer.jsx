@@ -18,7 +18,7 @@ const Footer = () => {
        <Link to="https://www.linkedin.com/in/shahamanpatwary/"  target="_blank">
        <FaLinkedin  className="w-10 h-10"></FaLinkedin>
        </Link>
-      <Link to="https://www.facebook.com/taijulamanbsl/"  target="_blank">
+      <Link to="https://www.facebook.com/ShahAmAn04/"  target="_blank">
       <FaFacebookSquare  className="w-10 h-10"></FaFacebookSquare>
       </Link>
       <Link to="https://hashnode.com/@ShahAman"  target="_blank">

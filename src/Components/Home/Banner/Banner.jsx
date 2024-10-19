@@ -66,15 +66,15 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center order-1">
-        <div className="mt-2 flex items-center">
+      <div className="flex justify-end order-1">
+        <div className=" flex items-center">
           <div className="inner-shadow rounded-full p-3 headerImage">
             <img
-              className="outer-shadow-0 rounded-full"
+              className="outer-shadow-5 rounded-lg"
               src={banner}
               alt=""
               style={{
-                width: "280px",
+                width: "350px",
               }}
             />
           </div>
