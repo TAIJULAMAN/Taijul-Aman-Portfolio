@@ -1,41 +1,18 @@
-import { useState, useEffect } from "react";
 import banner from "../../../assets/images/aman.png";
 import resume from "../../../../public/Aman Resume.pdf";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-  const [typingText, setTypingText] = useState("");
-  const [index, setIndex] = useState(0);
-  const texts = [
-    "React Js Developer.",
-    "Front End Developer.",
-    "MERN Stack Developer.",
-    "Responsive Web Designer.",
-  ];
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTypingText(() => {
-        const newIndex = (index + 1) % texts.length;
-        const newText = texts[newIndex];
-        setIndex(newIndex);
-        return newText;
-      });
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [index, texts]);
-
   return (
     <div className="relative overflow-x-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  px-[20px] md:px-[100px] lg:px-[100px]  pt-16 md:pt-32 bg-[#2e424d]">
       <div className="order-last lg:order-1">
         <div className="text-white">
-          <h2 className="text-2xl md:text-3xl lg:text-5xl py-2 font-semibold">
+          <h2 className="text-xl md:text-3xl lg:text-xl py-2 font-semibold">
             Hi, I am
-            <span className="text-[#98dad9] ml-2">Md.Shah Aman</span>
+            <span className="text-[#98dad9] ml-2"> Shah Aman</span>
           </h2>
           <h2 className="text-xl md:text-3xl lg:text-4xl font-bold py-4">
-            <span className="pr-4">A</span>
-            {typingText}
+            A Frontend Web Developer
           </h2>
           <p className="text-xl">
             Welcome! I am excited to thrive in a dynamic and challenging
@@ -48,21 +25,21 @@ const Banner = () => {
             success.
           </p>
           <div className="flex mt-10 gap-2">
-            <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
-              <a href="/contact" rel="noreferrer">
+            <Link to="/contact" rel="noreferrer">
+              <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
                 HIRE ME
-              </a>
-            </button>
-            <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
-              <a href={resume} download target="_blank" rel="noreferrer">
+              </button>
+            </Link>
+            <Link href={resume} download target="_blank" rel="noreferrer">
+              <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
                 RESUME
-              </a>
-            </button>
-            <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
-              <a href="/about" rel="noreferrer">
+              </button>
+            </Link>
+            <Link to="/about" rel="noreferrer">
+              <button className="text-[#2e424d] hover:bg-[#98dad9] px-2 md:px-5 py-2 md:py-3 rounded-lg shadow-lg mt-4 bg-white text-sm md:text-xl font-semibold">
                 ABOUT ME
-              </a>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

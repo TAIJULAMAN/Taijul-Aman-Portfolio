@@ -149,7 +149,7 @@ const Contact = () => {
                   placeholder="Your Phone"
                 />
                 <ContactTextArea
-                  row="6"
+                  row={6}
                   placeholder="Your Message"
                   name="user_message"
                   defaultValue=""

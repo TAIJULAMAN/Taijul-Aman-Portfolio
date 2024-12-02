@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const About = () => {
-  const abouts = [
+  const About = [
     {
       id: 1,
       title: "Personal Information",
@@ -24,7 +24,7 @@ const About = () => {
       title: "Professional Experience",
       description:
         "I am currently working as a Junior Web Developer at Dark Technologies since September 2023. In this role, I am responsible for building and maintaining websites using various programming features. I actively work to increase productivity by utilizing software to organize tasks, track bug patches, and handle feature requests. Additionally, I collaborate with other developers to update existing websites and create new features, ensuring high-quality web experiences.",
-      image: "https://i.ibb.co.com/gVtpgDY/e.png", 
+      image: "https://i.ibb.co.com/gVtpgDY/e.png",
       category: "experience",
     },
     {
@@ -79,7 +79,7 @@ const About = () => {
         </section>
         <section className="overflow-hidden py-5 bg-[#2f424d]">
           <div className="container">
-            {abouts
+            {About
               .filter((item) => item.category === toggle)
               .map((about) => (
                 <div

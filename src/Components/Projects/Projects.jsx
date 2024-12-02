@@ -2,7 +2,8 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-const Projects = ({ openModal, setOpenModal }) => {
+const Projects = () => {
+  const [openModal, setOpenModal] = useState(false);
   const projects = [
     {
       id: 1,
