@@ -79,32 +79,30 @@ const About = () => {
         </section>
         <section className="overflow-hidden py-5 bg-[#2f424d]">
           <div className="container">
-            {About
-              .filter((item) => item.category === toggle)
-              .map((about) => (
-                <div
-                  key={about.id}
-                  className="flex flex-wrap items-center justify-center"
-                >
-                  <div className="w-full lg:w-1/2">
-                    <div className="relative z-10 xl:w-8/12 mx-auto py-10">
-                      <img
-                        src={about.image}
-                        alt=""
-                        className="rounded-lg w-[500px] h-[400px] object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-                    <div className="mt-10 lg:mt-0">
-                      <h2 className="mb-5 text-3xl font-semibold text-[#98dad9] sm:text-[40px]/[48px]">
-                        {about.title}
-                      </h2>
-                      <p className="mb-5 text-white">{about.description}</p>
-                    </div>
+            {About.filter((item) => item.category === toggle).map((about) => (
+              <div
+                key={about.id}
+                className="flex flex-wrap items-center justify-center"
+              >
+                <div className="w-full lg:w-1/2">
+                  <div className="relative z-10 xl:w-8/12 mx-auto py-10">
+                    <img
+                      src={about.image}
+                      alt=""
+                      className="rounded-lg w-[500px] h-[400px] object-cover"
+                    />
                   </div>
                 </div>
-              ))}
+                <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+                  <div className="mt-10 lg:mt-0">
+                    <h2 className="mb-5 text-3xl font-semibold text-[#98dad9] sm:text-[40px]/[48px]">
+                      {about.title}
+                    </h2>
+                    <p className="mb-5 text-white">{about.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>

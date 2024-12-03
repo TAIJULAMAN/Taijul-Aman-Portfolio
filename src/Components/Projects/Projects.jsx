@@ -6,6 +6,28 @@ const Projects = () => {
   const [openModal, setOpenModal] = useState(false);
   const projects = [
     {
+      id: 10,
+      title: "Flight Ticket System",
+      git: "https://github.com/TAIJULAMAN/Flight-Ticket-System",
+      description:
+        "FTS is an intuitive online platform for booking flight tickets. It allows users to search for flights, compare prices, and easily make reservations, streamlining the travel planning process. The user-friendly interface enhances the overall booking experience.",
+      image: "https://i.ibb.co.com/9hd7jj2/fts.png",
+      tags: ["Next Js", "Redux", "tailwind"],
+      category: "Full Stack",
+      link: "https://fts-travo.vercel.app/",
+    },
+    {
+      id: 9,
+      title: "Ecommerce Web",
+      git: "https://github.com/TAIJULAMAN/EcommerceWeb-customerSide",
+      description:
+        "This e-commerce auction platform offers Pallet, Truckload, and Case products, with options for Auction and Day-wise listings. Users can engage in real-time bidding or purchase products based on daily availability, creating a versatile shopping experience. The responsive design ensures seamless navigation and interactions across all devices.",
+      image: "https://i.ibb.co.com/GncfZkq/ew.png",
+      tags: ["React Js", "Redux", "tailwind"],
+      category: "Full Stack",
+      link: "https://ecommerce-web-customer-side.vercel.app/",
+    },
+    {
       id: 1,
       title: "Bicycle Odyssey",
       git: "https://github.com/TAIJULAMAN/BICYCLE-ODYSSEY-CLIENT",
@@ -27,28 +49,7 @@ const Projects = () => {
       category: "Full Stack",
       link: "https://japantravelagencyandtour.com/",
     },
-    {
-      id: 9,
-      title: "Ecommerce Web",
-      git: "https://github.com/TAIJULAMAN/EcommerceWeb-customerSide",
-      description:
-        "This e-commerce auction platform offers Pallet, Truckload, and Case products, with options for Auction and Day-wise listings. Users can engage in real-time bidding or purchase products based on daily availability, creating a versatile shopping experience. The responsive design ensures seamless navigation and interactions across all devices.",
-      image: "https://i.ibb.co.com/GncfZkq/ew.png",
-      tags: ["React Js", "Redux", "tailwind"],
-      category: "Full Stack",
-      link: "https://ecommerce-web-customer-side.vercel.app/",
-    },
-    {
-      id: 10,
-      title: "Flight Ticket System",
-      git: "https://github.com/TAIJULAMAN/Flight-Ticket-System",
-      description:
-        "FTS is an intuitive online platform for booking flight tickets. It allows users to search for flights, compare prices, and easily make reservations, streamlining the travel planning process. The user-friendly interface enhances the overall booking experience.",
-      image: "https://i.ibb.co.com/9hd7jj2/fts.png",
-      tags: ["Next Js", "Redux", "tailwind"],
-      category: "Full Stack",
-      link: "https://fts-travo.vercel.app/",
-    },
+
     {
       id: 2,
       title: "Classroom",
@@ -115,7 +116,6 @@ const Projects = () => {
       category: "Static Site",
       link: "https://nomads-tour.vercel.app/",
     },
-    
   ];
 
   const [toggle, setToggle] = useState("all");
