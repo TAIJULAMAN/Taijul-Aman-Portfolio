@@ -45,7 +45,7 @@ const Projects = () => {
       git: "https://github.com/TAIJULAMAN/classroom",
       description:
         "Classroom is your gateway to a world of limitless learning possibilities. With our cutting-edge eLearning platform, you can explore a vast library of courses, from academic subjects to practical skills, all designed to help you achieve your goals.",
-      image: "https://i.ibb.co/qCPQ61Y/Classroom.png",
+      image: "https://i.ibb.co.com/vwCWjyd/classroom-2.png",
       tags: ["React", "Tailwind", "Framer Motion"],
       category: "Static Site",
       link: "https://classroom-three-beta.vercel.app/",
@@ -56,7 +56,7 @@ const Projects = () => {
       git: "https://github.com/TAIJULAMAN/medi-care",
       description:
         "A trusted online gateway to quality healthcare services. At MediCare, we prioritize your well-being by providing comprehensive information and resources to meet your healthcare needs..",
-      image: "https://i.ibb.co/3StRM8w/Medi-Care.png",
+      image: "https://i.ibb.co.com/TvwnN3S/hospital1.png",
       tags: ["React", "Tailwind", "Framer Motion"],
       category: "Static Site",
       link: "https://medi-care-self.vercel.app/",
@@ -67,7 +67,7 @@ const Projects = () => {
       git: "https://github.com/TAIJULAMAN/mama-food",
       description:
         "we understand the importance of wholesome, nutritious food that nourishes both body and soul. That's why we're dedicated to bringing you a diverse menu of mouthwatering dishes crafted with love and care, just like Mama used to make.",
-      image: "https://i.ibb.co/NKdqgDK/MAMA-FOOD.png",
+      image: "https://i.ibb.co.com/yNn9PHC/foodshop2.png",
       tags: ["React", "Tailwind", "Framer Motion"],
       category: "Static Site",
       link: "https://mama-food.vercel.app/",
@@ -78,7 +78,7 @@ const Projects = () => {
       git: "https://github.com/TAIJULAMAN/nomads-tour",
       description:
         "we specialize in curating bespoke travel itineraries that cater to every adventurer's wanderlust. Whether you're dreaming of exploring exotic destinations, embarking on thrilling adventures, or immersing yourself in cultural treasures, we're here to turn your travel dreams into reality.",
-      image: "https://i.ibb.co/YW8B3SS/Tour-Bazz.png",
+      image: "https://i.ibb.co.com/6mGfZV5/tourBazz.png",
       tags: ["React", "Tailwind", "Framer Motion"],
       category: "Static Site",
       link: "https://nomads-tour.vercel.app/",
