@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Blogs = () => {
   const posts = [
@@ -75,10 +76,38 @@ const Blogs = () => {
       href: "https://mdshahamanpatwary.hashnode.dev/javascript-arrow-functions-vs-regular-functions",
     },
   ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hover: { scale: 1.05, transition: { duration: 0.2 } },
+  };
+
   return (
-    <section className="py-5 bg-[#2f424d] px-[20px] md:px-[120px] lg:px-[120px]">
+    <motion.section
+      className="py-5 bg-[#2f424d] px-[20px] md:px-[120px] lg:px-[120px]"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="space-y-5 text-center mb-12">
+        <motion.div
+          className="space-y-5 text-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h1 className="text-[#98dad9] uppercase text-3xl font-extrabold">
             Latest Blog Posts
           </h1>
@@ -86,12 +115,17 @@ const Blogs = () => {
             Dive into my latest writings on JavaScript, CSS, and web
             development. I share what I learn and explore new ideas.
           </p>
-        </div>
-        <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        </motion.div>
+        <motion.ul
+          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+          variants={containerVariants}
+        >
           {posts.map((item, index) => (
-            <li
+            <motion.li
               key={index}
-              className="bg-[#3b4b55] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl group flex flex-col"
+              className="bg-[#3b4b55] rounded-lg shadow-lg overflow-hidden transform group flex flex-col"
+              variants={cardVariants}
+              whileHover="hover"
             >
               <img
                 src={item.img}
@@ -111,11 +145,11 @@ const Blogs = () => {
                   See More
                 </Link>
               </div>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
