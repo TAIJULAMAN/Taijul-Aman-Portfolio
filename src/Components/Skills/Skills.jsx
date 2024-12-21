@@ -122,19 +122,25 @@ const Skills = () => {
         <div className="w-full flex flex-wrap justify-center items-center gap-5 mt-5  transition-all duration-300 ease-in-out hover:translate-y-[10px] hover:brightness-110">
           {skills.map((skill, index) => (
             <div
-              className="w-full mx-w-[500px] md:mx-w-[500px] lg:mx-w-[500px] py-5 px-10 rounded-lg shadow-lg hover:shadow-[#98dad9] bg-[#171721] border-red-400 "
+              className="w-full mx-w-[500px] md:mx-w-[500px] lg:mx-w-[500px] py-5 px-10 rounded-lg"
               key={`skill-${index}`}
             >
-              <p className="text-center text-white mb-5 font-semibold text-2xl">
+             <div className="flex justify-center">
+             <p className="text-white mb-5 font-bold text-2xl border-b-2 border-white pb-2 w-[100px] text-center">
                 {skill.title}
               </p>
+             </div>
               <div className="flex flex-wrap justify-center items-center gap-3 mb-5">
                 {skill.skills.map((item, index_x) => (
                   <div
                     className=" flex items-center justify-center gap-2 py-3 px-4 rounded-lg border-white text-lg font-semibold text-white"
                     key={`skill-x-${index_x}`}
                   >
-                    <img className="w-10 h-10" src={item.image} loading="lazy" />
+                    <img
+                      className="w-10 h-10"
+                      src={item.image}
+                      loading="lazy"
+                    />
                     {item.name}
                   </div>
                 ))}
