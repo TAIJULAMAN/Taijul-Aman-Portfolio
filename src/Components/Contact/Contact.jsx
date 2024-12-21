@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="overflow-hidden bg-[#2f424d] py-20 md:pt-32 md:pb-20 px-[20px] md:px-[100px] lg:px-[100px]">
+    <section className="overflow-hidden bg-[#2f424d] py-5  md:py-10  px-[20px] md:px-[100px] lg:px-[100px]">
       <div className="container">
         <div className="flex flex-wrap lg:justify-center">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">

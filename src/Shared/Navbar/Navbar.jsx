@@ -12,21 +12,48 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-20 w-full text-white bg-[#2e424d] px-[20px] md:px-[100px] lg:px-[100px] py-5">
+    <div className="sticky z-20 w-full text-white bg-[#2e424d] px-[20px] md:px-[100px] lg:px-[100px] py-5">
       <div className="flex justify-between items-center">
         <div className="flex flex-row items-center cursor-pointer">
           <Link to="/" duration={500}>
-            <h1 className="text-2xl font-semibold hover:text-[#98dad9]">Shah Aman</h1>
+            <h1 className="text-2xl font-semibold hover:text-[#98dad9]">
+              Shah Aman
+            </h1>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-          <Link to="/about" className="hover:text-[#98dad9] transition-all cursor-pointer">About</Link>
-          <Link to="/projects" className="hover:text-[#98dad9] transition-all cursor-pointer">Projects</Link>
-          <Link to="/skills" className="hover:text-[#98dad9] transition-all cursor-pointer">Skills</Link>
-          <Link to="/blogs" className="hover:text-[#98dad9] transition-all cursor-pointer">Blogs</Link>
-          <Link to="/certification" className="hover:text-[#98dad9] transition-all cursor-pointer">Certification</Link>
+          <Link
+            to="/about"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            to="/projects"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
+          >
+            Projects
+          </Link>
+          <Link
+            to="/skills"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
+          >
+            Skills
+          </Link>
+          <Link
+            to="/blogs"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
+          >
+            Blogs
+          </Link>
+          <Link
+            to="/certification"
+            className="hover:text-[#98dad9] transition-all cursor-pointer"
+          >
+            Certification
+          </Link>
         </nav>
 
         {/* Contact Button */}
@@ -41,9 +68,17 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden flex items-center">
           {menu ? (
-            <AiOutlineClose size={28} onClick={handleChange} className="cursor-pointer" />
+            <AiOutlineClose
+              size={28}
+              onClick={handleChange}
+              className="cursor-pointer"
+            />
           ) : (
-            <AiOutlineMenu size={28} onClick={handleChange} className="cursor-pointer" />
+            <AiOutlineMenu
+              size={28}
+              onClick={handleChange}
+              className="cursor-pointer"
+            />
           )}
         </div>
       </div>
@@ -54,19 +89,39 @@ const Navbar = () => {
           menu ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-20`}
       >
-        <Link to="/about" onClick={closeMenu} className="hover:text-[#98dad9] transition-all cursor-pointer">
+        <Link
+          to="/about"
+          onClick={closeMenu}
+          className="hover:text-[#98dad9] transition-all cursor-pointer"
+        >
           About
         </Link>
-        <Link to="/projects" onClick={closeMenu} className="hover:text-[#98dad9] transition-all cursor-pointer">
+        <Link
+          to="/projects"
+          onClick={closeMenu}
+          className="hover:text-[#98dad9] transition-all cursor-pointer"
+        >
           Projects
         </Link>
-        <Link to="/skills" onClick={closeMenu} className="hover:text-[#98dad9] transition-all cursor-pointer">
+        <Link
+          to="/skills"
+          onClick={closeMenu}
+          className="hover:text-[#98dad9] transition-all cursor-pointer"
+        >
           Skills
         </Link>
-        <Link to="/blogs" onClick={closeMenu} className="hover:text-[#98dad9] transition-all cursor-pointer">
+        <Link
+          to="/blogs"
+          onClick={closeMenu}
+          className="hover:text-[#98dad9] transition-all cursor-pointer"
+        >
           Blogs
         </Link>
-        <Link to="/certification" onClick={closeMenu} className="hover:text-[#98dad9] transition-all cursor-pointer">
+        <Link
+          to="/certification"
+          onClick={closeMenu}
+          className="hover:text-[#98dad9] transition-all cursor-pointer"
+        >
           Certification
         </Link>
         <Link to="/contact">

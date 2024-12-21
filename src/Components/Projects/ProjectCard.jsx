@@ -12,6 +12,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
       <img
         className="w-full h-[180px] bg-white rounded shadow-lg shadow-[rgba(0, 0, 0, 0.3)]"
         src={project.image}
+        loading="lazy"
       />
       <div className=" w-full flex items-center flex-wrap gap-2 mt-4">
         {project.tags?.map((tag, index) => (

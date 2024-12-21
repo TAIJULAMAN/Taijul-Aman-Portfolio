@@ -43,7 +43,7 @@ function Certification() {
   };
 
   return (
-    <section className="pt-16 md:pt-32 bg-[#2f424d] px-6 md:px-12 lg:px-24">
+    <section className="py-5 bg-[#2f424d] px-6 md:px-12 lg:px-24">
       <div className="max-w-screen-xl mx-auto">
         <div className="space-y-4 text-center mb-12">
           <h1 className="text-[#98dad9] uppercase text-3xl font-extrabold">
