@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 152, 218, 217;
+    --color-primary-dark: 95, 158, 160;
+    --color-background: 255, 255, 255;
+    --color-text: 31, 41, 55;
+  }
+
+  .dark {
+    --color-primary: 95, 158, 160;
+    --color-primary-dark: 76, 126, 128;
+    --color-background: 26, 32, 44;
+    --color-text: 229, 231, 235;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-200 ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full hover:bg-gray-400 dark:hover:bg-gray-500;
+}

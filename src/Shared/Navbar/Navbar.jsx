@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
+import Theme from "../../Components/theme/Theme";
 
 // Custom animated underline component
 const AnimatedUnderline = ({ active }) => (
@@ -52,11 +53,11 @@ const Navbar = () => {
 
   return (
     <div 
-      className={`fixed top-0 left-0 right-0 z-50 w-full text-white transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500 ${
         scrolled 
-          ? 'bg-[#1a2a32]/90 backdrop-blur-md shadow-xl py-2' 
-          : 'bg-gradient-to-r from-[#1a2a32] to-[#2e424d] py-3'
-      } px-4 sm:px-8 lg:px-16 xl:px-24 border-b border-white/10`}
+          ? 'bg-white/80 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2' 
+          : 'bg-white dark:bg-gray-900 py-3'
+      } px-4 sm:px-8 lg:px-16 xl:px-24 border-b border-gray-200 dark:border-gray-700`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
@@ -68,11 +69,52 @@ const Navbar = () => {
             onMouseLeave={() => setHoveredLink(null)}
           >
             <h1 className="text-2xl font-bold bg-gradient-to-r from-[#98dad9] via-[#7ac5c4] to-[#5f9ea0] bg-clip-text text-transparent transition-all duration-500 group-hover:opacity-90 flex items-center">
-              {/* <span className="inline-block mr-2">👋</span> */}
-              <span className="relative text-2xl font-bold text-white">
-                Shah Aman
-                <span className={`absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#98dad9] to-[#5f9ea0] transform transition-all duration-500 ${hoveredLink === 'home' ? 'scale-x-100' : 'scale-x-0'}`}></span>
-              </span>
+              <div className="relative group">
+                <svg 
+                  width="40" 
+                  height="40" 
+                  viewBox="0 0 100 100" 
+                  className="transition-all duration-300 group-hover:scale-110"
+                >
+                  <defs>
+                    <linearGradient id="gradientA" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#98dad9" />
+                      <stop offset="100%" stopColor="#5f9ea0" />
+                    </linearGradient>
+                    <path 
+                      id="letterA"
+                      d="M50 10 L90 90 L80 90 L60 50 L40 50 L20 90 L10 90 Z M35 70 L65 70"
+                      fill="none" 
+                      stroke="url(#gradientA)" 
+                      strokeWidth="8" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    />
+                  </defs>
+                  
+                  <use href="#letterA" className="transition-all duration-500" />
+                  
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 50 50"
+                    to="5 50 50"
+                    dur="3s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                  />
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 50 50"
+                    to="-5 50 50"
+                    dur="4s"
+                    repeatCount="indefinite"
+                    additive="sum"
+                  />
+                </svg>
+                <span className={`absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-[#98dad9] to-[#5f9ea0] transform -translate-x-1/2 transition-all duration-500 ${hoveredLink === 'home' ? 'w-full' : 'w-0'}`}></span>
+              </div>
             </h1>
           </Link>
         </div>
@@ -106,8 +148,13 @@ const Navbar = () => {
           })}
         </nav>
 
-        {/* Contact Button */}
-        <div className="hidden lg:flex items-center">
+        <div className="hidden lg:flex items-center space-x-4">
+          {/* Theme Switcher */}
+          <div className="hidden md:block">
+            <Theme />
+          </div>
+          
+          {/* Contact Button */}
           <Link 
             to="/contact" 
             className="group relative overflow-hidden"
