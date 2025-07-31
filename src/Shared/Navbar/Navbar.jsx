@@ -180,7 +180,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="lg:hidden flex items-center">
+        <div className="lg:hidden flex items-center z-999">
           <button
             onClick={handleChange}
             className="relative group p-2 rounded-lg focus:outline-none"
@@ -188,18 +188,18 @@ const Navbar = () => {
           >
             <span className="sr-only">Open main menu</span>
             <div className="relative w-6 h-5">
-              <span className={`absolute left-0 w-6 h-0.5 bg-white transform transition-all duration-300 ${menu ? 'rotate-45 translate-y-2' : 'translate-y-0'}`}></span>
-              <span className={`absolute left-0 w-6 h-0.5 bg-white transform transition-all duration-300 ${menu ? 'opacity-0' : 'opacity-100 translate-y-2'}`}></span>
-              <span className={`absolute left-0 w-6 h-0.5 bg-white transform transition-all duration-300 ${menu ? '-rotate-45 translate-y-2' : 'translate-y-4'}`}></span>
+              <span className={`absolute left-0 w-6 h-0.5 bg-gray-900 transform transition-all duration-300 ${menu ? 'rotate-45 translate-y-2' : 'translate-y-0'}`}></span>
+              <span className={`absolute left-0 w-6 h-0.5 bg-gray-900 transform transition-all duration-300 ${menu ? 'opacity-0' : 'opacity-100 translate-y-2'}`}></span>
+              <span className={`absolute left-0 w-6 h-0.5 bg-gray-900 transform transition-all duration-300 ${menu ? '-rotate-45 translate-y-2' : 'translate-y-4'}`}></span>
             </div>
-            <span className="absolute inset-0 rounded-lg bg-white/0 group-hover:bg-white/5 transition-colors duration-300"></span>
+            <span className="absolute inset-0 rounded-lg bg-gray-900/0 group-hover:bg-gray-900/5 transition-colors duration-300"></span>
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`mt-14 lg:hidden fixed inset-0 z-40 bg-gradient-to-br from-[#1a2a32] to-[#2e424d] transform transition-all duration-500 ease-in-out ${
+        className={`mt-16 lg:hidden fixed inset-0 z-40 bg-gradient-to-br from-[#1a2a32] to-[#2e424d] transform transition-all duration-500 ease-in-out ${
           menu ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
         style={{
